@@ -10,12 +10,13 @@
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)
+![HarmonyOS](https://img.shields.io/badge/HarmonyOS-000000?style=for-the-badge&logo=harmonyos&logoColor=white)
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
 ![Chrome](https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white)
 
 :heavy_check_mark: This project provides the minimal build of opencv library for the **Android**, **iOS** and **ARM Linux** platforms.
 
-:heavy_check_mark: Packages for **Windows**, **Linux**, **MacOS** and **WebAssembly** are available now.
+:heavy_check_mark: Packages for **Windows**, **Linux**, **MacOS**, **HarmonyOS** and **WebAssembly** are available now.
 
 :heavy_check_mark: We provide prebuild binary packages for opencv **2.4.13.7**, **3.4.20** and **4.10.0**.
 
@@ -24,6 +25,10 @@
 :heavy_check_mark: All the binaries are compiled from source on github action, **no virus**, **no backdoor**, **no secret code**.
 
 :heavy_check_mark: ***NEW FEATURE*** [`cv::putText` supports full-width CJK characters](#cvputtext-supports-full-width-cjk-characters)
+
+:heavy_check_mark: ***NEW FEATURE*** [`cv::imshow` supports Linux framebuffer and Windows](#cvimshow-supports-linux-framebuffer-and-windows)
+
+:heavy_check_mark: ***NEW FEATURE*** [`cv::VideoWriter` supports jpg streaming over http](#cvvideowriter-supports-jpg-streaming-over-http)
 
 |opencv 4.10.0 package size|The official opencv|opencv-mobile|
 |:-:|:-:|:-:|
@@ -71,6 +76,20 @@ https://github.com/nihui/opencv-mobile/releases/latest
   [<img src="https://img.shields.io/badge/download-2.4.13.7-blue?style=for-the-badge">](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-2.4.13.7-android.zip)
   [<img src="https://img.shields.io/badge/download-3.4.20-blue?style=for-the-badge">](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-3.4.20-android.zip)
   [<img src="https://img.shields.io/badge/download-4.10.0-blue?style=for-the-badge">](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.10.0-android.zip)
+
+</td>
+</tr>
+
+<tr>
+<td>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/HMOS_Logo_Icon.svg/240px-HMOS_Logo_Icon.svg.png" width="64" height="auto">
+</td>
+<td>HarmonyOS</td>
+<td>
+
+  [<img src="https://img.shields.io/badge/download-2.4.13.7-blue?style=for-the-badge">](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-2.4.13.7-harmonyos.zip)
+  [<img src="https://img.shields.io/badge/download-3.4.20-blue?style=for-the-badge">](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-3.4.20-harmonyos.zip)
+  [<img src="https://img.shields.io/badge/download-4.10.0-blue?style=for-the-badge">](https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.10.0-harmonyos.zip)
 
 </td>
 </tr>
@@ -331,6 +350,7 @@ https://github.com/nihui/opencv-mobile/releases/latest
   <br />arm-linux-uclibcgnueabihf<br />
   &#9989; HW JPG encoder<br />
   &#9989; MIPI CSI camera<br />
+  &#9989; DPI LCD screen<br />
   <a href="https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.10.0-luckfox-pico.zip">
     <img alt="opencv4-luckfox-pico" src="https://img.shields.io/badge/download-4.10.0-blue?style=for-the-badge">
   </a>
@@ -356,6 +376,7 @@ https://github.com/nihui/opencv-mobile/releases/latest
   &#9989; HW JPG decoder<br />
   &#9989; HW JPG encoder<br />
   &#9989; MIPI CSI camera<br />
+  &#9989; SPI LCD screen<br />
   <a href="https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.10.0-tinyvision.zip">
     <img alt="opencv4-tinyvision" src="https://img.shields.io/badge/download-4.10.0-blue?style=for-the-badge">
   </a>
@@ -397,15 +418,35 @@ https://github.com/nihui/opencv-mobile/releases/latest
   </a>
 </td>
 <td>
+  <a href="https://www.loongson.cn/news/show?id=673">
+    <img alt="2k0300-fengniao" src="https://github.com/user-attachments/assets/3ff9048d-a2b7-46a4-8534-e8bf5b85a2e1" width="auto" height="120">
+    <br /><b>2k0300-fengniao</b>
+  </a>
+  <br />loongarch64-linux-gnu<br />
+  <a href="https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.10.0-2k0300-fengniao.zip">
+    <img alt="opencv4-2k0300-fengniao" src="https://img.shields.io/badge/download-4.10.0-blue?style=for-the-badge">
+  </a>
 </td>
 </tr>
-
+<td>
+  <a href="https://gitee.com/LockzhinerAI/LockzhinerVisionModule">
+    <img alt="lockzhiner-vision-module" src="https://github.com/user-attachments/assets/67252677-a336-4a88-9c65-f10d34c6c1f2" width="auto" height="120">
+    <br /><b>lockzhiner-vision-module</b>
+  </a>
+  <br />arm-linux-uclibcgnueabihf<br />
+  &#9989; HW JPG encoder<br />
+  &#9989; MIPI CSI camera<br />
+  &#9989; DPI LCD screen<br />
+  <a href="https://github.com/nihui/opencv-mobile/releases/latest/download/opencv-mobile-4.10.0-lockzhiner-vision-module.zip">
+    <img alt="opencv4-lockzhiner-vision-module" src="https://img.shields.io/badge/download-4.10.0-blue?style=for-the-badge">
+  </a>
+</td>
 </table>
 
 # Usage Android
 
 1. Extract archive to ```<project dir>/app/src/main/jni/```
-2. Modify ```<project dir>/app/src/main/jni/CMakeListst.txt``` to find and link opencv
+2. Modify ```<project dir>/app/src/main/jni/CMakeLists.txt``` to find and link opencv
 
 ```cmake
 set(OpenCV_DIR ${CMAKE_SOURCE_DIR}/opencv-mobile-4.10.0-android/sdk/native/jni)
@@ -414,14 +455,14 @@ find_package(OpenCV REQUIRED)
 target_link_libraries(your_jni_target ${OpenCV_LIBS})
 ```
 
-# Usage iOS and MacOS
+# Usage iOS, macOS, watchOS, tvOS, visionOS
 
 1. Extract archive, and drag ```opencv2.framework``` or ```opencv2.xcframework``` into your project
 
 # Usage ARM Linux, Windows, Linux, WebAssembly
 
 1. Extract archive to ```<project dir>/```
-2. Modify ```<project dir>/CMakeListst.txt``` to find and link opencv
+2. Modify ```<project dir>/CMakeLists.txt``` to find and link opencv
 3. Pass ```-DOpenCV_STATIC=ON``` to cmake option for windows build
 
 ```cmake
@@ -512,6 +553,89 @@ int main()
     cv::Rect rr = cv::getTextSize(bgr.size(), zhtext, cv::Point(30, 250), myfont, 20);
 
     cv::imwrite("out.jpg", bgr);
+
+    return 0;
+}
+```
+
+## `cv::imshow` supports Linux framebuffer and Windows
+
+In Linux, `cv::imshow` can display images on the screen (`/dev/fb0`) via the [Linux Framebuffer API](https://www.kernel.org/doc/html/latest/fb/api.html). `cv::imshow` can work without desktop environment (gnome, KDE Plasma, xfce, etc.) or window manager (X or wayland), making it suitable for embedded scenarios. The first argument to `cv::imshow` must be **`fb`**.
+
+In Windows, `cv::imshow` will use the Windows API to create a simple window for displaying.
+
+<table>
+<tr><td>
+
+display image
+
+```cpp
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+int main()
+{
+    cv::Mat bgr = cv::imread("im.jpg", 1);
+
+    cv::imshow("fb", bgr);
+
+    return 0;
+}
+```
+
+</td><td>
+
+realtime camera preview
+
+```cpp
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+int main()
+{
+    cv::VideoCapture cap;
+    cap.set(cv::CAP_PROP_FRAME_WIDTH, 320);
+    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 240);
+    cap.open(0);
+
+    cv::Mat bgr;
+    while (1)
+    {
+        cap >> bgr;
+        cv::imshow("fb", bgr);
+    }
+
+    return 0;
+}
+```
+
+</td></tr>
+</table>
+
+## `cv::VideoWriter` supports jpg streaming over http
+
+In Linux, `cv::VideoWriter` could be used for streaming images as jpg over http, while it is noop on other platforms. Initialize a `cv::VideoWriter` instance, `open` the writer with name `httpjpg` and a port number, then it will setup a simple http server. You can open the streaming url with a web browser, and image will be shown in the browser as soon as it is sent to the writer. The image size and content can be dynamic, which is useful for streaming frames from a live camera.
+
+```cpp
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+int main()
+{
+    cv::VideoCapture cap;
+    cap.open(0);
+
+    cv::VideoWriter http;
+    http.open("httpjpg", 7766);
+
+    // open streaming url http://<server ip>:7766 in web browser
+
+    cv::Mat bgr;
+    while (1)
+    {
+        cap >> bgr;
+        http << bgr;
+    }
 
     return 0;
 }
